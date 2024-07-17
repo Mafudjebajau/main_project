@@ -1,0 +1,98 @@
+*{padding: 0;
+margin: 0;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+/* Estilos para a modal */
+.modal {
+  display: none; /* Modal inicialmente oculta */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+   /* Fundo semi-transparente */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  position: relative;
+  border-radius: 5px;
+}
+
+/* Estilos para os slides */
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  text-align: center;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+/* Estilos para botões de controle dos slides */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Estilos para o botão de fechar */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: white;
+  background-color: red;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.close:hover {
+  background-color: darkred;
+}

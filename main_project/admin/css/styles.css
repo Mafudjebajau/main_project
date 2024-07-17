@@ -1,0 +1,123 @@
+body {
+    background-color: #f4f7f6;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #343a40;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-dodgerblue {
+    color: dodgerblue;
+}
+
+#login_hour {
+    font-size: 0.9rem;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.main div {
+    background: linear-gradient(to bottom right, #ffffff, #e6e6e6);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 150px; /* Define a mesma altura para todas as áreas */
+}
+
+.main div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.main div i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+#category {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    color: white;
+}
+
+#fornece {
+    background: linear-gradient(135deg, #6c757d 0%, #4e555b 100%);
+    color: white;
+}
+
+#products {
+    background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%);
+    color: white;
+}
+
+#finance {
+    background: linear-gradient(135deg, #4caf50 0%, #388e3c 100%);
+    color: white;
+}
+
+#vendors {
+    background: linear-gradient(135deg, #17a2b8 0%, #117a8b 100%);
+    color: white;
+}
+
+#messages {
+    background: linear-gradient(135deg, #fd7e14 0%, #d35400 100%);
+    color: white;
+}
+
+.compras {
+    background: linear-gradient(135deg, #ffc107 0%, #e0a800 100%);
+    color: white;
+}
+
+.vendas {
+    background: linear-gradient(135deg, #ff5722 0%, #e64a19 100%);
+    color: white;
+}
+
+.compras p, .vendas p {
+    margin: 0.5rem 0;
+}
+
+.text-red {
+    color: red;
+}
+
+.text-green {
+    color: green;
+}
+
+#btn-logout-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+#logout {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#logout:hover {
+    transform: scale(1.1);
+}

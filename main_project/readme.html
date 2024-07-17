@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sistema Web - Documenta&ccedil;&atilde;o</title>
+    <style>
+      /* From extension vscode.github */
+      /*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+      .vscode-dark img[src$="\#gh-light-mode-only"],
+      .vscode-light img[src$="\#gh-dark-mode-only"],
+      .vscode-high-contrast:not(.vscode-high-contrast-light)
+        img[src$="\#gh-light-mode-only"],
+      .vscode-high-contrast-light img[src$="\#gh-dark-mode-only"] {
+        display: none;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css"
+    />
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI",
+          system-ui, "Ubuntu", "Droid Sans", sans-serif;
+        font-size: 14px;
+        line-height: 1.6;
+      }
+    </style>
+    <style>
+      .task-list-item {
+        list-style-type: none;
+      }
+
+      .task-list-item-checkbox {
+        margin-left: -20px;
+        vertical-align: middle;
+        pointer-events: none;
+      }
+    </style>
+    <style>
+      :root {
+        --color-note: #0969da;
+        --color-tip: #1a7f37;
+        --color-warning: #9a6700;
+        --color-severe: #bc4c00;
+        --color-caution: #d1242f;
+        --color-important: #8250df;
+      }
+    </style>
+    <style>
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --color-note: #2f81f7;
+          --color-tip: #3fb950;
+          --color-warning: #d29922;
+          --color-severe: #db6d28;
+          --color-caution: #f85149;
+          --color-important: #a371f7;
+        }
+      }
+    </style>
+    <style>
+      .markdown-alert {
+        padding: 0.5rem 1rem;
+        margin-bottom: 16px;
+        color: inherit;
+        border-left: 0.25em solid #888;
+      }
+
+      .markdown-alert > :first-child {
+        margin-top: 0;
+      }
+
+      .markdown-alert > :last-child {
+        margin-bottom: 0;
+      }
+
+      .markdown-alert .markdown-alert-title {
+        display: flex;
+        font-weight: 500;
+        align-items: center;
+        line-height: 1;
+      }
+
+      .markdown-alert .markdown-alert-title .octicon {
+        margin-right: 0.5rem;
+        display: inline-block;
+        overflow: visible !important;
+        vertical-align: text-bottom;
+        fill: currentColor;
+      }
+
+      .markdown-alert.markdown-alert-note {
+        border-left-color: var(--color-note);
+      }
+
+      .markdown-alert.markdown-alert-note .markdown-alert-title {
+        color: var(--color-note);
+      }
+
+      .markdown-alert.markdown-alert-important {
+        border-left-color: var(--color-important);
+      }
+
+      .markdown-alert.markdown-alert-important .markdown-alert-title {
+        color: var(--color-important);
+      }
+
+      .markdown-alert.markdown-alert-warning {
+        border-left-color: var(--color-warning);
+      }
+
+      .markdown-alert.markdown-alert-warning .markdown-alert-title {
+        color: var(--color-warning);
+      }
+
+      .markdown-alert.markdown-alert-tip {
+        border-left-color: var(--color-tip);
+      }
+
+      .markdown-alert.markdown-alert-tip .markdown-alert-title {
+        color: var(--color-tip);
+      }
+
+      .markdown-alert.markdown-alert-caution {
+        border-left-color: var(--color-caution);
+      }
+
+      .markdown-alert.markdown-alert-caution .markdown-alert-title {
+        color: var(--color-caution);
+      }
+    </style>
+  </head>
+  <body class="vscode-body vscode-light">
+    <button id="home">Página principal</button>
+    <h1 id="sistema-web---documentação">Sistema Web - Documentação</h1>
+    <h2 id="1-introdução">1. Introdução</h2>
+    <h3 id="visão-geral-do-projeto">Visão Geral do Projeto</h3>
+    <p>O sistema web de vendas foi desenvolvido para:</p>
+    <h3 id="objetivos">Objetivos</h3>
+    <ul>
+      <li>Facilitar a gestão de vendas de uma loja</li>
+      <li>Prover um ambiente parcial entre vendedor cliente e gerente</li>
+    </ul>
+    <h3 id="tecnologias-utilizadas">Tecnologias Utilizadas</h3>
+    <ul>
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+      <li>PHP 8</li>
+      <li>MySQL</li>
+    </ul>
+    <h2 id="2-estrutura-do-projeto">2. Estrutura do Projeto</h2>
+    <h3 id="árvore-de-diretórios">Árvore de Diretórios</h3>
+    <h3 id="descrição-dos-diretórios">Descrição dos Diretórios</h3>
+    <ul>
+      <li><strong>css/</strong>: Contém os arquivos de estilo.</li>
+      <li><strong>js/</strong>: Contém os arquivos JavaScript.</li>
+      <li><strong>admin/</strong>: Contém as paginas do admin.</li>
+      <li>
+        <strong>produtos/</strong>: Contém as paginas de cadastro de produto.
+      </li>
+      <li><strong>vendas/</strong>: Contém as paginas de vendas.</li>
+      <li><strong>clientes/</strong>: Contém as paginas de clientes.</li>
+      <li>
+        <strong>incluedes/</strong>: Contém os scripts de configuração
+        header,footer da pagina.
+      </li>
+    </ul>
+    <h2 id="3-instalação">3. Instalação</h2>
+    <h3 id="requisitos">Requisitos</h3>
+    <ul>
+      <li>Servidor Apache</li>
+      <li>PHP 7+</li>
+      <li>MySQL 8+</li>
+    </ul>
+    <h3 id="passos-para-instalação">Passos para Instalação</h3>
+    <ol>
+      <li>Instale e configure o servidor Apache.</li>
+      <li>Configure o banco de dados acessando o arquivo installer.php.</li>
+    </ol>
+    <h3 id="configuração">Configuração</h3>
+    <p>
+      Edite o arquivo <code>db.php</code> e configure os parâmetros de conexão
+      com o banco de dados.
+    </p>
+    <p>...</p>
+    <h2 id="4-funcionamento-do-sistema">4. Funcionamento do Sistema</h2>
+    <h3 id="fluxo-de-navegação">Fluxo de Navegação</h3>
+    <ul>
+      <li>O usuário acessa a página inicial</li>
+      <li>
+        Em seguida, navega para administrar se no caso é um gerente, mas se é
+        vendedor cabe ao gerente fornecer os tokens de acesso
+      </li>
+    </ul>
+    <h3 id="funcionalidades">Funcionalidades</h3>
+    <ul>
+      <li>
+        <strong>Cadastro de Vendedores</strong>: Permite que o gerente cadastre
+        novos vendedores.
+      </li>
+      <li>
+        <strong>Cadastro de Clientes</strong>: Permite que o vendedor cadastre
+        novos clientes.
+      </li>
+      <li>
+        <strong>Cadastro de produtos, categorias, fornecedores</strong>: Permite
+        que o gerente cadastre estes itens.
+      </li>
+      <li>
+        <strong>Autenticação</strong>: Sistema de login do adminstrador, o
+        password master será fornecido junto com o programa.
+      </li>
+    </ul>
+    <p>...</p>
+    <h2 id="5-componentes-frontend">5. Componentes Frontend</h2>
+    <h3 id="html">HTML</h3>
+    <p>
+      Os principais arquivos HTML estão localizados dentro de paginas com
+      extenção PHP
+    </p>
+    <h3 id="css">CSS</h3>
+    <p>Utilizamos dois estilos:</p>
+    <ul>
+      <li>
+        <strong>css</strong>: a pasta fica dentro da página admin que é para
+        estilizar alguns componentes específicos do admin.
+      </li>
+      <li>
+        <strong>css</strong>: a pasta fica no directório principal e serve para
+        todo o sistema.
+      </li>
+    </ul>
+    <h3 id="javascript">JavaScript</h3>
+    <p>Os scripts principais estão no directorio /js.</p>
+    <p>...</p>
+    <h2 id="6-componentes-backend">6. Componentes Backend</h2>
+    <h3 id="estrutura-dos-arquivos-php">Estrutura dos Arquivos PHP</h3>
+    <p>Os principais arquivos PHP são:</p>
+    <ul>
+      <li><strong>index.php</strong>: Ponto de entrada do sistema.</li>
+      <li><strong>db.php</strong>: Script de conexão com o banco de dados.</li>
+      <li>
+        <strong>installer.php</strong>: script que instala o sistema, configura
+        a conexão com o banco de dados e cria o arquivo db.php.
+      </li>
+    </ul>
+    <h3 id="fluxo-de-dados">Fluxo de Dados</h3>
+    <p>Os dados são enviados do frontend atravéz dos metodos post e get.</p>
+    <h3 id="integrações">Integrações</h3>
+    <p>Integração com o serviço de icones do fontawesome.</p>
+    <p>...</p>
+    <h2 id="7-banco-de-dados">7. Banco de Dados</h2>
+    <h3 id="modelo-de-dados">Modelo de Dados</h3>
+    <p>-<strong>Simples</strong>;</p>
+    <h2 id="8-api">8. API</h2>
+    <h3 id="endpoints">Endpoints</h3>
+    <ul>
+      <li><strong>GET /api/users</strong>: Retorna a lista de usuários.</li>
+    </ul>
+    <h3 id="autenticação">Autenticação</h3>
+    <p>
+      Utilizamos façanhas da variavel $_SESSION[] para autenticar os usuários
+    </p>
+    <p>...</p>
+    <h2 id="9-manutenção-e-atualizações">9. Manutenção e Atualizações</h2>
+    <h3 id="procedimentos-de-atualização">Procedimentos de Atualização</h3>
+    <p>Para atualizar o sistema contacte a equipe a 49Legacy.</p>
+    <h3 id="melhores-práticas-de-manutenção">
+      Melhores Práticas de Manutenção
+    </h3>
+    <ul>
+      <li>Monitorar o desempenho do sistema e os dados.</li>
+    </ul>
+    <p>...</p>
+    <h2 id="10-anexos">10. Anexos</h2>
+    <h3 id="referências">Referências</h3>
+    <ul>
+      <li><a href="https://www.php.net/docs.php">Documentação PHP</a></li>
+      <li><a href="https://dev.mysql.com/doc/">Documentação MySQL</a></li>
+    </ul>
+    <h3 id="créditos">Créditos</h3>
+    <ul>
+      <li>Mafudje Bá Jau</li>
+    </ul>
+    <h3 id="termos-de-uso">Termos de Uso</h3>
+    <p>Os termos de uso do sistema são:</p>
+    <ul>
+      <li>Page a licença antes de usar.</li>
+    </ul>
+
+    <script
+      async
+      src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"
+    ></script>
+    <script>
+       document.getElementById('home').addEventListener("click",()=>{
+    location.href = "index.php"
+   })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Janelinha de Instruções com Slides</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Botão para abrir a modal de instruções -->
+ <button id="home">Página principal</button>
+<button id="openModalBtn">Instruções</button>
+<button id="dockBtn">Documentação</button>
+<!-- Modal de instruções -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Instruções</h2>
+    <div class="slideshow-container">
+      <div class="slide">
+        <img src="img1.jpg" alt="Imagem 1">
+      </div>
+      <div class="slide">
+        <img src="img2.jpg" alt="Imagem 2">
+      </div>
+      <div class="slide">
+        <img src="img3.jpg" alt="Imagem 3">
+      </div>
+      <div class="slide">
+        <img src="img4.jpg" alt="Imagem 4">
+      </div>
+      <div class="slide">
+        <img src="img.jpg" alt="Imagem 5">
+      </div>
+
+      <!-- Botões de controle -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+  </div>
+</div>
+<script>
+   document.getElementById("dockBtn").addEventListener('click',()=>{
+    location.href = "../readme.html"
+   })
+   document.getElementById('home').addEventListener("click",()=>{
+    location.href = "../index.php"
+   })
+
+</script>
+<script src="script.js"></script>
+</body>
+</html>
